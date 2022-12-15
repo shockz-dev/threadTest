@@ -5,6 +5,7 @@ internal class Program
   private static void Main(string[] args)
   {
     TaskMethod("Main Thread Task");
+
     Task<int> task = CreateTask("Task 1");
     task.Start();
     int result = task.Result;
