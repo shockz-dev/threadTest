@@ -44,7 +44,7 @@ internal class Program
 
     return taskTotal;
   }
-
+   
   private static ConcurrentDictionary<char, int> MergeAccumulators(ConcurrentDictionary<char, int> total, ConcurrentDictionary<char, int> taskTotal)
   {
     foreach (var key in taskTotal.Keys)
